@@ -19,7 +19,15 @@ The project also includes automated unit testing using pytest.
 
 The project follows the following flow:
 
-REST API → JSON Data → Python Generator → Pandas Transformation → CSV + JSON Output
+REST API
+↓
+JSON Data
+↓
+Python Generator
+↓
+Pandas Transformation
+↓
+CSV + JSON Output
 
 ## Features
 
@@ -85,6 +93,7 @@ REST API → JSON Data → Python Generator → Pandas Transformation → CSV + 
 
 ## Project Structure
 
+```text
 DATAGROKR-Week3-ETL-Pipeline-with-Unit-Tests/
 │
 ├── main.py
@@ -106,38 +115,53 @@ DATAGROKR-Week3-ETL-Pipeline-with-Unit-Tests/
 └── output/
     ├── users_transformed.csv
     └── city_summary.json
+```
 
 ## How to Run
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Sameer-Honnatti/DATAGROKR-Week3-ETL-Pipeline-with-Unit-Tests.git
+```
 
 ### 2. Open the Project Folder
 
+```bash
 cd DATAGROKR-Week3-ETL-Pipeline-with-Unit-Tests
+```
 
 ### 3. Create a Virtual Environment
 
+```bash
 python -m venv .venv
+```
 
 ### 4. Activate the Virtual Environment
 
 For Windows PowerShell:
 
+```bash
 .venv\Scripts\Activate.ps1
+```
 
 ### 5. Install Dependencies
 
+```bash
 python -m pip install -r requirements.txt
+```
 
 ### 6. Run the ETL Pipeline
 
+```bash
 python main.py
+```
 
 ### 7. Run Unit Tests
 
+```bash
 pytest
+```
 
 ## Testing
 
@@ -157,22 +181,28 @@ The test suite covers:
 
 All 7 tests passed successfully.
 
+```text
 7 passed
+```
 
 ## Sample Output
 
 ### ETL Pipeline Output
 
+```text
 =======================================================
        DATA GROKR WEEK 3 - ETL PIPELINE
 =======================================================
 
 ETL pipeline completed successfully.
 Output file: output\users_transformed.csv
+```
 
 ### Pytest Output
 
+```text
 7 passed
+```
 
 ## Output Files
 
